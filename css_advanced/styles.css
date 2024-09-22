@@ -6,367 +6,337 @@
 
 
 /* CSS reset rules */
-
-html,
-body {
-    height: 100%;
-    min-height: 100%;
+* {
+    box-sizing: border-box;
+    text-wrap: wrap;
 }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-fieldset,
-form,
-label,
-legend,
-/* table, */
-caption,
-/* tbody,
-tfoot,
-thead,
-tr,
-th,
-td, */
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+header {
+    /* main_part */
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 1093px;
+    left: 0px;
+    top: 0px;
+    background-image: url("Object.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+.logo {
+    margin-top: 25px;
+    display: flex;
+    align-self: flex-start;
+    list-style: none;
+    float: left;
+    flex-direction: row-reverse;
+    height: fit-content;
 }
 
-body {
-    line-height: 1;
+.nav {
+    display: flex;
+    float: right;
+    align-self: flex-start;
+    list-style: none;
+    float: left;
+    flex-direction: row-reverse;
+    height: fit-content;
+    justify-content: space-between;
+    float: left;
+    margin-left: auto;
+}
+
+ul,
+li {
+    align-self: flex-end;
+    list-style: none;
+    float: left;
+    flex-direction: row-reverse;
+    height: fit-content;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.Get_schooled {
+
     display: flex;
     flex-direction: column;
-    background-image: url(1.jpg);
+    align-items: center;
 }
 
-main {
+.REGISTER {
+    height: 558px;
     display: flex;
-    flex-direction: row;
-    flex: auto;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
-blockquote,
-q {
-    quotes: none;
+.REGISTER h1 {
+    color: white;
+    padding-top: 100px;
+    font-size: 100px;
+    margin-bottom: 0;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
+.REGISTER span {
+    display: inline-block;
+    /* Makes spans block-level elements */
+    color: #fff;
+    padding: 10px 20px;
+    /*Adds padding around the spans */
 }
 
-/* table {
-    border-collapse: collapse;
-    border-spacing: 0;
-} */
-
-article,
-aside {
-    overflow-y: auto;
+.REGISTER button {
+    background-color: blueviolet;
+    /* Blue background */
+    color: #fff;
+    /* White text */
+    border: none;
+    /* Removes default border */
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 10px;
+    margin-top: 30px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Fonts and colors */
-
-body {
-    font-family: 'Josefin Sans', serif;
-    color: rgb(0, 0, 0);
+.learn {
+    width: 100%;
+    text-align: center;
+    color: #fff;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header {
-    font-family: 'Yeseva One', sans-serif;
+.learn h2 {
+    color: white;
+    font-size: 60px;
+    display: block;
+    margin: auto;
+    align-self: center;
 }
 
-/* article {
-    background-image: url(notepad-pens-holder-laptop-white-wooden-backdrop.jpg);
-    image-resolution: auto;
-} */
+.pics4 {
+    display: flex;
+    justify-content: center;
 
-header {
-    border-bottom: 1px solid rgb(221, 221, 221);
-    transition: border-bottom-color 1s ease;
 }
 
-header a {
-    color: rgba(0, 0, 0, 0.8);
+.inpics4 {
+    padding: 0px, 10px, 20px, 10px;
+    margin: 20px;
+    text-align: center;
 }
 
-aside {
-    /* background: #FAFAFA; */
-    background: inherit;
+.inpics4 img {
+    border-radius: 50%;
 }
 
-aside p {
-    border: 1px solid #bbb;
-    background: #ddd;
-    color: black;
-}
-
-article p {
-    border: 1px solid #bbb;
-    background: #ddd;
-    color: black;
-}
-
-footer a {
-    color: rgba(0, 0, 0, 0.8);
-}
-
-a {
-    color: #F80002;
-}
-
-
-/* Positioning and margins */
-
-@media (min-width: 1100px) {
-    body {
-        width: 1100px;
-        margin: 0 auto;
-    }
-}
-
-article {
-    padding: 50px 15px;
-    flex: 2;
-}
-
-article>*:first-child {
-    margin-top: 0;
-}
-
-aside {
-    padding: 50px 15px;
-    flex: 1;
-}
-
-header .right {
-    float: right;
-    margin: 0 10px 15px;
-}
-
-
-/* Header */
-header {
-    padding: 20px 0;
-    height: 80px;
-}
-
-header ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-header li {
-    display: inline;
-    vertical-align: middle;
-}
-
-header li:first-child {
+.Person {
+    background-color: #C271FF;
+    color: #fff;
+    width: 100%;
+    height: 400px;
     margin: 0;
 }
 
-header li a {
-    margin: 0 10px;
+.person_quote {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header li.logo {
-    font-size: 36px;
+.person_quote img {
+    height: 120px;
 }
 
-header a {
-    text-decoration: none;
+.person_quote h3,
+p {
+    padding-left: 40px;
 }
 
+.tutorials {
+    width: 100%;
+    text-align: center;
+    height: 500px;
+}
 
-/* Aside */
+.tutorials h3 {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    height: 20%;
+}
 
-aside p {
+.tutorials h3 span {
+    color: #C271FF;
+}
+
+.vids {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.vid {
+    height: 300px;
+    width: 19%;
     border-radius: 10px;
-    padding: 20px 20px;
+    margin: 0px 15px;
 }
 
+.picname {
+    display: flex;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 30px;
+    color: blueviolet;
+}
 
-/* Footer */
+.picname img {
+    height: 30px;
+    width: 30px;
+    margin-top: 17px;
+    margin-right: 10px;
+}
+
+.s_pic {
+    height: auto;
+    width: 100%;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    flex: 3;
+    align-items: center;
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 30px;
+    color: #C271FF;
+}
+
+.stars img {
+    height: auto;
+    width: 50%;
+    margin-right: auto;
+}
+
+.Free_membership {
+    background-color: #071629;
+    text-align: center;
+    height: 450px;
+    color: #ffff;
+}
+
+.Free_membership h3 {
+    height: 20%;
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+.Free_membership h3 .highlighted_1 {
+    color: #C271FF;
+}
+
+.smile_faces_container {
+    display: flex;
+    justify-content: center;
+    min-height: 250px;
+    align-items: center;
+}
+
+.smile_faces {
+    width: 250px;
+}
+
+.Free_membership button {
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    background-color: #C271FF;
+}
+
+.FAQ {
+    background-color: #fff;
+    text-align: center;
+    height: 600px;
+}
+
+.FAQ h2 {
+    height: 10%;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.FAQ_BOXS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.FAQ_BOX {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.FAQ_TEXT {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 40%;
+    text-align: left;
+}
 
 footer {
-    padding: 5px 15px;
-    height: 80px;
+    background-color: #071629;
+    color: #fff;
 }
 
-
-/* Text styles and margins */
-
-p {
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    padding: 20px 20px;
-}
-
-h1 {
-    font-size: 36px;
-    margin: 40px 0 20px;
-}
-
-h2 {
-    font-size: 32px;
-    margin: 30px 0 15px;
-}
-
-h3 {
-    font-size: 28px;
-    margin: 25px 0 10px;
-}
-
-h4 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20px 0 10px;
-}
-
-h5 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px 0 10px;
-}
-
-h6 {
-    font-weight: bold;
-    margin: 5px 0;
-}
-
-/* Table Designe */
-
-table {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 600px;
-    height: 125px;
+.footer_container {
     text-align: center;
-    line-height: 100%;
-    vertical-align: middle;
 }
 
-thead {
-    background-color: #40403f;
-    color: white;
-    height: 25px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    line-height: 100%;
-    vertical-align: middle;
+.footer_All {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
-tbody {
-    background-color: #eeeeeb;
+.footer_logo {
+    display: flex;
+    align-items: center;
     height: 100px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    line-height: 100%;
-    vertical-align: middle;
 }
 
-@media (max-width: 800px) {
-    body.works_on_smartphone {
-        display: block;
-    }
+.footer_logo img {
+    height: auto;
+    width: 150px;
+    margin-top: 45px;
+}
 
-    body.works_on_smartphone main {
-        display: block;
-    }
+.footer_pics {
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+}
 
-    header .right {
-        float: none;
-    }
+.footer_pics a {
+    margin-right: 15px;
 }
