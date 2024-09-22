@@ -19,7 +19,7 @@ header {
     height: 1093px;
     left: 0px;
     top: 0px;
-    background-image: url("Object.png");
+    background-image: url("pics/Object.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
@@ -95,7 +95,7 @@ li {
 }
 
 .REGISTER button {
-    background-color: blueviolet;
+    background-color: #C271FF;
     /* Blue background */
     color: #fff;
     /* White text */
@@ -259,13 +259,18 @@ p {
 }
 
 .Free_membership button {
-    margin-top: 20px;
-    border-radius: 20px;
-    padding: 10px;
-    border: 0;
-    outline: 0;
-    color: #fff;
     background-color: #C271FF;
+    /* Blue background */
+    color: #fff;
+    /* White text */
+    border: none;
+    /* Removes default border */
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 10px;
+    margin-top: 30px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .FAQ {
