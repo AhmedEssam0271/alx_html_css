@@ -170,14 +170,25 @@ html {
         margin-top: 20%;
     }
 
+    @keyframes colorchang {
+        0% {
+            background-color: white;
+        }
+
+        50% {
+            background-color: yellow;
+        }
+
+        100% {
+            background-color: white;
+        }
+    }
+
     .music-container {
         height: 80%;
         display: flex;
         flex-direction: column;
-    }
 
-    .sound-frecuency {
-        margin-left: 5%;
     }
 
     .music-container div {
@@ -188,6 +199,10 @@ html {
         margin-top: 5%;
         margin-bottom: 5%;
         margin-right: 5%;
+        animation-name: colorchang;
+        animation-duration: 5s;
+        animation-timing-function: 5s;
+        animation-delay: 2s;
     }
 
     .musicpic {
@@ -239,6 +254,28 @@ html {
         flex-direction: column;
     }
 
+    @keyframes shapecolor {
+        0% {
+            background-color: #FF6565;
+        }
+
+        20% {
+            background-color: #fb4141;
+        }
+
+        50% {
+            background-color: #c80000;
+        }
+
+        70% {
+            background-color: #7d0000;
+        }
+
+        100% {
+            background-color: #2f0101;
+        }
+    }
+
     .section_3 .shape-container .shape {
         position: relative;
         margin-right: 2.5%;
@@ -251,6 +288,10 @@ html {
         margin-bottom: 5%;
         background-color: #FF6565;
         clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+        animation-name: shapecolor;
+        animation-duration: 5s;
+        animation-timing-function: 5s;
+        animation-delay: 5s;
     }
 
     .section_3 .shape-container .shape p {
@@ -519,6 +560,20 @@ html {
         margin-top: 20%;
     }
 
+    @keyframes colorchang {
+        0% {
+            background-color: white;
+        }
+
+        50% {
+            background-color: yellow;
+        }
+
+        100% {
+            background-color: white;
+        }
+    }
+
     .music-container {
         height: 80%;
         display: flex;
@@ -538,6 +593,10 @@ html {
         margin-top: 5%;
         margin-bottom: 5%;
         margin-right: 5%;
+        animation-name: colorchang;
+        animation-duration: 5s;
+        animation-timing-function: 5s;
+        animation-delay: 2s;
     }
 
     .musicpic {
@@ -589,6 +648,28 @@ html {
 
     }
 
+    @keyframes shapecolor {
+        0% {
+            background-color: #FF6565;
+        }
+
+        20% {
+            background-color: #fb4141;
+        }
+
+        50% {
+            background-color: #c80000;
+        }
+
+        70% {
+            background-color: #7d0000;
+        }
+
+        100% {
+            background-color: #2f0101;
+        }
+    }
+
     .section_3 .shape-container .shape {
         position: relative;
         margin-right: 2.5%;
@@ -601,6 +682,10 @@ html {
         margin-bottom: 5%;
         background-color: #FF6565;
         clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+        animation-name: shapecolor;
+        animation-duration: 5s;
+        animation-timing-function: 5s;
+        animation-delay: 5s;
     }
 
     .section_3 .shape-container .shape p {
@@ -868,6 +953,20 @@ html {
         margin-top: 20%;
     }
 
+    @keyframes colorchang {
+        0% {
+            background-color: white;
+        }
+
+        50% {
+            background-color: yellow;
+        }
+
+        100% {
+            background-color: white;
+        }
+    }
+
     .music-container {
         height: 80%;
         display: flex;
@@ -887,6 +986,10 @@ html {
         margin-top: 5%;
         margin-bottom: 5%;
         margin-right: 5%;
+        animation-name: colorchang;
+        animation-duration: 5s;
+        animation-timing-function: 5s;
+        animation-delay: 2s;
     }
 
     .musicpic {
@@ -938,6 +1041,28 @@ html {
 
     }
 
+    @keyframes shapecolor {
+        0% {
+            background-color: #FF6565;
+        }
+
+        20% {
+            background-color: #fb4141;
+        }
+
+        50% {
+            background-color: #c80000;
+        }
+
+        70% {
+            background-color: #7d0000;
+        }
+
+        100% {
+            background-color: #2f0101;
+        }
+    }
+
     .section_3 .shape-container .shape {
         position: relative;
         margin-right: 2.5%;
@@ -950,6 +1075,10 @@ html {
         margin-bottom: 5%;
         background-color: #FF6565;
         clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+        animation-name: shapecolor;
+        animation-duration: 5s;
+        animation-timing-function: 5s;
+        animation-delay: 5s;
     }
 
     .section_3 .shape-container .shape p {
