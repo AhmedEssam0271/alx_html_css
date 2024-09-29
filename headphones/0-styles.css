@@ -1,0 +1,431 @@
+/* Importing webfonts */
+/* (If you're learning CSS, you should disregard that) */
+
+@import url(https://fonts.googleapis.com/css?family=Yeseva+One);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic);
+
+html {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 100%;
+}
+
+
+/* CSS reset rules */
+* {
+    box-sizing: border-box;
+    text-wrap: wrap;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* For mobile phones: */
+@media only screen and (min-width: 480px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    /* For tablets: */
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+
+
+header {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 123%;
+}
+
+.logo {
+    margin-top: 25px;
+}
+
+.nav_bar {
+    display: flex;
+    list-style: none;
+    flex-direction: row-reverse;
+    height: fit-content;
+    justify-content: space-between;
+    float: left;
+    margin-left: auto;
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 100%;
+    font-style: normal;
+    text-align: center;
+}
+
+ul,
+li {
+    list-style: none;
+    float: left;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #FF6565;
+    opacity: 0.9;
+}
+
+.nav-link:active {
+    color: #FF6565;
+    opacity: 0.9;
+}
+
+.section_1 {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.calltoaction_1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calltoaction_1 .Lorem-1 {
+    color: white;
+    padding-top: 100px;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 200%;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+.calltoaction_1 .Lorem-2 {
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+.calltoaction_1 .Lorem-3 {
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 100%;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.calltoaction_1 button {
+    background-color: #FF6565;
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 30px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.section_2 {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.section_2 .Lorem-3wb {
+    color: #071629;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 100%;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 20%;
+}
+
+.music-container {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sound-frecuency {
+    margin-left: 5%;
+}
+
+.music-container div {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+}
+
+.musicpic {
+    align-self: center;
+    height: auto;
+}
+
+.Lorem-3wbs {
+    color: #071629;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 100%;
+    font-style: normal;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 0;
+    margin-top: 15%;
+}
+
+.section_3 {
+    background-image: url(images/backgrounds3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.Lorem-3wb3 {
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 100%;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 20%;
+    margin-top: 20%;
+}
+
+.section_3 .shape-container {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.section_3 .shape-container .shape {
+    position: relative;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #FF6565;
+    clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+}
+
+.section_3 .shape-container .shape p {
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+.section_3 .shape-container .shape p .num {
+    font-size: 250%;
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+
+.section_3 .shape-container .shape p .discription {
+    font-size: 80%;
+    margin-top: 2%;
+    display: block;
+}
+
+.section_4 {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.line {
+    border-bottom: 5px solid #071629;
+    height: 20%;
+    margin: auto;
+}
+
+.button_2 {
+    background-color: #FF6565;
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 5% auto auto auto;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #071629;
+}
+
+.footer_pics {
+    float: right;
+}
+
+.socialpics {
+    margin-right: 5%;
+}
+
+
+.footer_container {
+    display: grid;
+
+}
+
+h5 {
+    color: white;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
